@@ -1,4 +1,4 @@
-venv/
+rmdir /s /q .gitvenv/
 .env
 __pycache__/
 *.pyc
