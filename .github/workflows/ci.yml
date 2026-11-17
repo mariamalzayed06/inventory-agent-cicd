@@ -48,8 +48,3 @@ jobs:
         if: runner.os == 'Windows'
         shell: powershell -NoProfile -ExecutionPolicy Bypass -File {0}
         run: docker info
-
-      - name: Check Docker on macOS
-        if: runner.os == 'macOS'
-        shell: bash
-        run: docker info
