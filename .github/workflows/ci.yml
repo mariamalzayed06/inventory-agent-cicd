@@ -37,7 +37,8 @@ jobs:
 
       - name: Push Docker image
         run: docker push ghcr.io/mariamalzayed06/inventory-agent-cicd:latest
-    deploy:
+        
+deploy:
     needs: test
     runs-on: [self-hosted, portfolio-deploy]
     env:
